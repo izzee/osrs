@@ -1,0 +1,86 @@
+p {
+  margin: 0;
+}
+
+body { 
+  background-color: #000;
+  background-image: url('https://www.runescape.com/img/rsp777/bg2.jpg');
+  background-size: 90vw auto;
+  background-repeat: repeat-y;
+  background-position: center;
+  cursor: url('http://www.rw-designer.com/cursor-view/16538.png') 14 14, auto;
+}
+
+.App {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 64px 120px;
+  min-height: 100vh;
+}
+
+table {
+  flex: 1;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  text-align: left;
+  background-image: url('https://www.runescape.com/img/rsp777/scroll/backdrop_745.gif');
+  background-size: 100% auto;
+  position: relative;
+}
+
+table::before,
+table::after {
+  content: '';
+  width: calc(100% + 24px);
+  position: absolute;
+  height: 64px;
+  background-image: url('https://www.runescape.com/img/rsp777/scroll/backdrop_765_top.gif');
+  background-size: 100% 64px;
+  left: -12px;
+}
+
+table::before {
+  top: -32px;
+}
+
+thead {
+  color: #7B4F17;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+tbody {
+  font-size: 13px;
+}
+
+tr {
+  box-shadow: 0 1px 0 #7B4F1722;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px;
+  color: #90c040;
+  background-color: #000;
+  border: 2px solid #382418;
+}
+
+button {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  font-weight: 700;
+  cursor: url('http://www.rw-designer.com/cursor-view/16528.png') 14 14, auto;
+}
+ 
+button:disabled {
+  cursor: url('http://www.rw-designer.com/cursor-view/16532.png') 14 14, auto;
+}
